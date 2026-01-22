@@ -3,6 +3,10 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-   base: '/React-deploy/',
   plugins: [react()],
+  base:"react-deploy",
+  server:{
+    open:true,
+    port:3001,
+  },
 })
